@@ -46,15 +46,14 @@ create table countries(
 
 create table family(
                        id_family int not null primary key auto_increment,
-                       family_name varchar(50),
-                       primary key (id_family,family_name)
+                       family_name varchar(50)
 );
 
 create table transfer(
                          id_user_giver int not null,
                          id_user_receiver int not null,
                          given_at DATETIME not null default now(),
-                         tokens_transfered int not null,
+                         tokens_transfered int not null
 );
 
 create table user(
@@ -65,7 +64,7 @@ create table user(
                      pseudo_user varchar(16) not null unique,
                      avatar_user varchar(1000),
                      token_user int not null default 0,
-                     id_country int not null,
+                     id_country varchar(3) not null,
                      id_family int
 );
 
