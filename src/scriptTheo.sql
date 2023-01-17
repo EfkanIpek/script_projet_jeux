@@ -27,9 +27,9 @@ create table items(
                       validity_date datetime default null
 );
 
-create table order_items(
-                            id_order_item int not null auto_increment primary key,
+create table order_composition(
                             id_user int not null,
-                            ordered_at datetime not null default now()
+                            id_item int not null,
+                            quantity int(3) not null
 );
 
