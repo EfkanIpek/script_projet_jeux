@@ -38,3 +38,9 @@ values ('France', 0.2, 15, 'euro','€'),('Turquie', 0.1, 14, 'Turk Lira', 'TL')
 
 insert into family (family_name)
 values ('Simpson'),('McCormick');
+
+insert into user (email_user, password_user, birth_date, pseudo_user, avatar_user, id_country, id_family)
+values ('bart@simpsons.com','azerty', 1970-03-06,'El Barto','oufhqeirufq.png',1,2)
+,('kenny@southpark.com','123456',1980-12-23,'Kenny','fuvhiqrhnosencois.jpg',2,2),
+ ('homer@simpsons.com','qsdfghjklm',1950-07-01,'El Homo', 'rohvqoero.png',1,1),
+ ('eric@cartman.com','wxcvbn',1980-08-09,'Cartman','reivheriierh.jpg',1,2);
