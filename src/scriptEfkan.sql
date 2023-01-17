@@ -33,8 +33,8 @@ create table user(
                      id_family int not null,
 );
 
-insert into countries (country_name, tax_country, legal_age, currency_name, currency_symbol)
-values ('France', 0.2, 15, 'euro','€'),('Turquie', 0.1, 14, 'Turk Lira', 'TL');
+insert into countries (id_country, country_name, tax_country, legal_age, currency_name, currency_symbol)
+values ('FR', 'France', 0.2, 15, 'euro','€'),('TR', 'Turquie', 0.1, 14, 'Turk Lira', 'TL');
 
 insert into family (family_name)
 values ('Simpson'),('McCormick');

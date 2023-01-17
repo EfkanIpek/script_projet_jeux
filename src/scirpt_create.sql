@@ -36,7 +36,7 @@ create table order_composition(
 );
 
 create table countries(
-                          id_country int not null primary key auto_increment,
+                          id_country varchar(3) not null primary key,
                           country_name varchar(50) not null,
                           tax_country float not null,
                           legal_age int not null,
@@ -66,7 +66,7 @@ create table user(
                      avatar_user varchar(1000),
                      token_user int not null default 0,
                      id_country int not null,
-                     id_family int not null
+                     id_family int
 );
 
 alter table user
@@ -87,5 +87,7 @@ add foreign key (id_user) references user(id_user);
 alter table order_composition
 add foreign key (id_user) references order_items(id_user),
 add foreign key (id_item) references items(id_item);
+
+
 
 
